@@ -1,0 +1,100 @@
+//
+//	CONTENT
+// ------------------------------------------------------
+
+//
+ul {
+	max-width: em(470);
+	// margin: 0 auto;
+
+	/* grid fun */
+	display: grid;
+	grid-row-gap: em(18);
+	padding-left: 0;
+}
+
+// each list item
+.dude {
+	display: grid;
+	grid-template-columns: 1fr 20fr 1fr;
+	justify-items: start;
+	align-items: center;
+}
+
+// colorful
+article {
+	color: #fff;
+	@include font-size(14);
+	font-weight: bold;
+
+	background: $color-bg-dude;
+	border: em(4) solid transparent;
+
+	@include rounded(em(9));
+
+	width: 100%;
+	padding: em(10) em(8);
+
+	transition: $animation-speed border-color ease-in-out,
+		$animation-speed opacity ease-in-out;
+
+	strong {
+		color: #fff;
+		font-weight: 300;
+	}
+
+	span {
+		font-weight: normal;
+		display: block;
+	}
+}
+
+.faded {
+	opacity: 0.35;
+}
+
+.gold {
+	border-color: yellow;
+}
+
+// preview
+.preview {
+	font-weight: 300;
+	@include font-size(13);
+	opacity: 0.5;
+}
+
+// delete link
+.ctrl {
+	color: #fff;
+	@include font-size(12);
+	font-weight: bold;
+	font-family: inherit;
+
+	cursor: pointer;
+	text-decoration: none;
+
+	width: 4.25em;
+	padding: 0.75em;
+
+	padding: {
+		left: 0;
+		right: 1.5em;
+	}
+
+	text-align: right;
+}
+
+// number input
+input.ctrl {
+	border: none;
+	background-color: transparent;
+	outline: none!important;
+	
+	padding: {
+		left: 3.5em;
+		right: 0;
+	}
+
+	text-align: left;
+}

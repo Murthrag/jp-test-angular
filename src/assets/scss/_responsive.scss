@@ -1,0 +1,11 @@
+//
+//	RESPONSIVE MEDIA QUERIES
+// ------------------------------------------------------
+
+@media ( max-width: $width-sm ) {
+
+	article {
+		@include font-size(12);
+	}
+
+}

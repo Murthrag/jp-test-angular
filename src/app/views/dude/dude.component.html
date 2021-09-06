@@ -1,0 +1,38 @@
+<ul>
+	<li [@dudeAnim] class="dude" *ngFor="let dude of characters">
+		<a class="ctrl" (click)="remove(dude)">x</a>
+
+		<article [ngClass]="{ faded: dude.cool < 10, gold: dude.cool > 50 }">
+			{{ dude.who }}
+			<span>{{ dude.wat }}</span>
+		</article>
+
+		<input
+			class="ctrl"
+			type="number"
+			[value]="dude.cool"
+			[(ngModel)]="dude.cool"
+		/>
+	</li>
+</ul>
+
+<form class="add-new" (keydown.enter)="addDude()">
+	<input
+		type="text"
+		[value]="newWho"
+		(input)="newWho = inputWho.value"
+		#inputWho
+	/>
+
+	<input
+		type="text"
+		[value]="newWat"
+		(input)="newWat = inputWhat.value"
+		#inputWhat
+	/>
+</form>
+
+<p class="preview">
+	{{ newWho }} <br />
+	<small>{{ newWat }}</small>
+</p>

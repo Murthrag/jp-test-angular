@@ -1,0 +1,75 @@
+//
+//	GENERAL
+// ------------------------------------------------------
+
+// border-box
+html {
+	@include box-sizing(border-box);
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+// text selection
+@include selection {
+	background-color: $color-sel;
+	color: #fff;
+}
+
+// touch my body
+body {
+	color: $color-text;
+	background: $color-bg-body;
+
+	font: {
+		size: $font-size-base;
+		family: $font-family-sans;
+		weight: normal;
+	}
+
+	text-align: center;
+	margin: 0;
+	padding: 2em 0.5em;
+	// padding-left: 0;
+	padding-right: 2.5em;
+	height: 100vh;
+
+	display: grid;
+	justify-content: center;
+
+	line-height: 1.42857143;
+}
+
+// links and images
+a {
+	color: $color-text;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+// lists
+ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+
+	li,
+	a {
+		display: inline-block;
+	}
+}
+
+// highlight
+strong,
+.strong {
+	color: $color-strong;
+	font-weight: normal;
+}

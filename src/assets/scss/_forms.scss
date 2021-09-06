@@ -1,0 +1,32 @@
+.add-new {
+	max-width: em(300);
+	margin: 2em auto 3em;
+
+	input {
+		color: #fff;
+		@include font-size(14);
+		background: none;
+
+		border: none;
+		border-bottom: em(2) solid rgba(255, 255, 255, 0.9);
+
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 0.5em;
+
+		&:focus {
+			outline: none;
+		}
+
+		&:first-child {
+			font-weight: bold;
+			max-width: 100%;
+		}
+
+		&:last-child {
+			@include font-size(13);
+			width: 100%;
+		}
+	}
+}

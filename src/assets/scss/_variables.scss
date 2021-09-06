@@ -1,0 +1,33 @@
+//
+//	VARIABLES
+// ------------------------------------------------------
+
+$font-size-base: 100%;
+$font-family-sans: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-serif: 'Big Caslon', Georgia, serif;
+
+$color: #101010;
+$color-text: 	 #ebebeb;
+$color-muted:	 #777;
+$color-strong:   #02bd44;
+$color-bg-body:  #182d4f;
+$color-bg-dude:  #9F3FA3;
+$color-sel:		 black;
+
+
+$dude-colors: (
+	#3b9ae1,
+	#02bd44,
+	#e64134,
+	#eb70b1,
+	#0f1a5f
+);
+
+
+$debug: false;
+$enable-rounded: true;
+$animation-speed: .15s;
+
+$width-sm: 480px;
+$width-md: 800px;
+$width-lg: 1024px;

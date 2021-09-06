@@ -1,0 +1,10 @@
+//
+//	COLORS
+// ------------------------------------------------------
+
+@for $i from 1 through length($dude-colors) {
+    $color: nth($dude-colors, $i);
+
+	li:nth-child(5n+#{$i}) article { background: $color; }
+    // ... do something fancy with $c
+}
